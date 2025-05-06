@@ -52,10 +52,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
-          <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</a>
+          <Link to="/#features" className="text-sm font-medium hover:text-primary transition-colors">Features</Link>
+          <Link to="/#pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</Link>
           <Link to="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</Link>
-          <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Support</a>
+          <Link to="/support" className="text-sm font-medium hover:text-primary transition-colors">Support</Link>
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -99,10 +99,10 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <a href="#features" className="text-sm font-medium py-2 hover:text-primary transition-colors">Features</a>
-            <a href="#pricing" className="text-sm font-medium py-2 hover:text-primary transition-colors">Pricing</a>
+            <Link to="/#features" className="text-sm font-medium py-2 hover:text-primary transition-colors">Features</Link>
+            <Link to="/#pricing" className="text-sm font-medium py-2 hover:text-primary transition-colors">Pricing</Link>
             <Link to="/resources" className="text-sm font-medium py-2 hover:text-primary transition-colors">Resources</Link>
-            <a href="#" className="text-sm font-medium py-2 hover:text-primary transition-colors">Support</a>
+            <Link to="/support" className="text-sm font-medium py-2 hover:text-primary transition-colors">Support</Link>
             
             {currentUser ? (
               <>

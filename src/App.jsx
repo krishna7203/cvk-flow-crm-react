@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider, ROLES } from "./contexts/AuthContext";
 import Index from "./pages/Index";
 import Resources from "./pages/Resources";
+import Support from "./pages/Support";
 import Login from "./pages/Login";
 import AccessDenied from "./pages/AccessDenied";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
             {/* Public routes */}
             <Route path="/" element={<Index />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/support" element={<Support />} />
             <Route path="/login" element={<Login />} />
             <Route path="/access-denied" element={<AccessDenied />} />
             
