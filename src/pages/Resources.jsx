@@ -115,7 +115,7 @@ const Resources = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-20"> {/* Added pt-20 to prevent content from hiding under fixed navbar */}
+      <main className="flex-grow pt-20"> {/* Padding top to prevent content from hiding under fixed navbar */}
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">
