@@ -115,7 +115,7 @@ const Resources = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-20"> {/* Added pt-20 to prevent content from hiding under fixed navbar */}
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">
@@ -139,7 +139,7 @@ const Resources = () => {
         {/* Resources Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+            <Tabs defaultValue={activeTab} onValueChange={setActiveTab} className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 {resourceCategories.map(category => (
                   <TabsTrigger key={category.id} value={category.id}>
@@ -152,11 +152,9 @@ const Resources = () => {
                 <TabsContent key={category.id} value={category.id}>
                   <div className="text-center mb-12">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">{category.title}</h2>
-                    <div className="max-w-2xl mx-auto">
-                      <p className="text-muted-foreground">
-                        {category.description}
-                      </p>
-                    </div>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                      {category.description}
+                    </p>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,11 +192,9 @@ const Resources = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Upcoming Webinars</h2>
-              <div className="max-w-2xl mx-auto">
-                <p className="text-muted-foreground">
-                  Join our live webinars to learn from experts and enhance your CRM skills
-                </p>
-              </div>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Join our live webinars to learn from experts and enhance your CRM skills
+              </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
