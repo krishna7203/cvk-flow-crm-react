@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
           <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">Pricing</a>
-          <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Resources</a>
+          <a href="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</a>
           <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Support</a>
         </div>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a href="#features" className="text-sm font-medium py-2 hover:text-primary transition-colors">Features</a>
             <a href="#pricing" className="text-sm font-medium py-2 hover:text-primary transition-colors">Pricing</a>
-            <a href="#" className="text-sm font-medium py-2 hover:text-primary transition-colors">Resources</a>
+            <a href="/resources" className="text-sm font-medium py-2 hover:text-primary transition-colors">Resources</a>
             <a href="#" className="text-sm font-medium py-2 hover:text-primary transition-colors">Support</a>
             <div className="flex flex-col space-y-2 pt-2">
               <Button variant="outline" className="rounded-full px-6 w-full">Sign In</Button>
