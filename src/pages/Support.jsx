@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -71,7 +70,7 @@ const Support = () => {
   const faqs = [
     {
       question: "How do I reset my password?",
-      answer: "You can reset your password by clicking on the "Forgot Password" link on the login page.",
+      answer: "You can reset your password by clicking on the 'Forgot Password' link on the login page.",
     },
     {
       question: "Can I upgrade my plan?",
