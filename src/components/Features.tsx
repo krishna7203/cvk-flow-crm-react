@@ -1,5 +1,5 @@
 
-import { Check, Contact, Database, Briefcase, Bell, Chart } from "lucide-react";
+import { Check, Contact, Database, Briefcase, Bell, BarChart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Features = () => {
@@ -12,7 +12,7 @@ const Features = () => {
     {
       title: "Sales Pipeline",
       description: "Visualize and manage your sales process with a customizable pipeline view.",
-      icon: Chart,
+      icon: BarChart,
     },
     {
       title: "Data Analytics",
